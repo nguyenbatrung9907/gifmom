@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Tấm thiệp 20/10 dịu dàng dành tặng mẹ, với bó tulip và album kỷ niệm gia đình."
+    />
+    <meta name="theme-color" content="#fff5f4" />
+    <title>Món quà 20/10 dành tặng mẹ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@300;400&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient--pink" aria-hidden="true"></div>
+    <div class="ambient ambient--green" aria-hidden="true"></div>
+    <div class="galaxy-atmosphere" id="galaxyAtmosphere" aria-hidden="true"></div>
+
+    <main id="giftJourney">
+      <section
+        class="screen screen--welcome is-active"
+        id="welcomeScreen"
+        aria-labelledby="welcomeTitle"
+      >
+        <div class="welcome-card">
+          <div class="welcome-flowers" aria-hidden="true">
+            <span>✿</span><span>❀</span><span>✿</span>
+          </div>
+          <div class="gift-envelope" aria-hidden="true">
+            <div class="gift-envelope__letter">♡</div>
+            <div class="gift-envelope__flap"></div>
+            <div class="gift-envelope__heart">♥</div>
+          </div>
+          <p class="eyebrow">MỘT MÓN QUÀ NHỎ · 20 THÁNG 10</p>
+          <h1 id="welcomeTitle" tabindex="-1">
+            Gửi mẹ nhân ngày 20/10 <span>❤️</span>
+          </h1>
+          <p class="welcome-copy">
+            Ngày 20/10 này, con có một món quà nhỏ muốn dành tặng mẹ.
+          </p>
+          <button
+            class="button button--primary"
+            id="openGiftButton"
+            type="button"
+          >
+            🎁 Mở món quà dành cho mẹ
+          </button>
+          <p class="welcome-signature">Từ con trai của mẹ</p>
+        </div>
+        <div class="welcome-sparkles" aria-hidden="true"></div>
+      </section>
+
+      <section
+        class="screen screen--bouquet"
+        id="bouquetScreen"
+        aria-labelledby="bouquetTitle"
+        hidden
+        inert
+      >
+        <div class="section-shell bouquet-shell">
+          <p class="eyebrow">MỘT BÓ HOA NHỎ GỬI ĐẾN MẸ</p>
+          <h2 id="bouquetTitle" tabindex="-1">20/10 — NGÀY CỦA MẸ</h2>
+          <div
+            class="bouquet-scene"
+            id="bouquetScene"
+            role="img"
+            aria-label="Bó hoa gồm mười một bông tulip hồng, lá xanh và nơ hồng phấn"
+          >
+            <div class="bouquet-halo" aria-hidden="true"></div>
+            <div class="bouquet-sparkles" aria-hidden="true"></div>
+            <div
+              class="bouquet-flowers"
+              id="bouquetFlowers"
+              aria-hidden="true"
+            ></div>
+            <div
+              class="bouquet-wrap bouquet-wrap--back"
+              aria-hidden="true"
+            ></div>
+            <div class="bouquet-stems" aria-hidden="true"></div>
+            <div
+              class="bouquet-wrap bouquet-wrap--front"
+              aria-hidden="true"
+            ></div>
+            <div class="bouquet-ribbon" aria-hidden="true">
+              <span
+                class="bouquet-ribbon__loop bouquet-ribbon__loop--left"
+              ></span>
+              <span
+                class="bouquet-ribbon__loop bouquet-ribbon__loop--right"
+              ></span>
+              <span class="bouquet-ribbon__knot"></span>
+              <span
+                class="bouquet-ribbon__tail bouquet-ribbon__tail--left"
+              ></span>
+              <span
+                class="bouquet-ribbon__tail bouquet-ribbon__tail--right"
+              ></span>
+            </div>
+            <div class="bouquet-ground-shadow" aria-hidden="true"></div>
+            <div
+              class="floating-petals"
+              id="floatingPetals"
+              aria-hidden="true"
+            ></div>
+          </div>
+          <p class="bouquet-message">
+            Con không có món quà nào đủ lớn để cảm ơn mẹ, nên con gửi mẹ bó hoa
+            nhỏ này cùng tất cả tình yêu của con.
+          </p>
+          <div class="screen-actions">
+            <button
+              class="button button--primary"
+              data-next="letterScreen"
+              type="button"
+            >
+              💗 Gửi mẹ lời yêu thương
+            </button>
+            <button
+              class="button button--quiet"
+              data-previous="welcomeScreen"
+              type="button"
+            >
+              Quay lại
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="screen screen--letter"
+        id="letterScreen"
+        aria-labelledby="letterTitle"
+        hidden
+        inert
+      >
+        <article class="letter-card">
+          <div class="letter-flower letter-flower--one" aria-hidden="true">
+            ❀
+          </div>
+          <div class="letter-flower letter-flower--two" aria-hidden="true">
+            ✿
+          </div>
+          <p class="eyebrow">TỪ TRÁI TIM CON</p>
+          <h2 id="letterTitle" tabindex="-1">Một lời con muốn gửi mẹ</h2>
+          <div class="letter-copy" id="letterCopy">
+            <p>Mẹ thân mến,</p>
+            <p>
+              Nhân ngày 20/10, con chúc mẹ luôn mạnh khỏe, bình an và vui vẻ.
+              Cảm ơn mẹ đã luôn yêu thương, chăm sóc và dành cho con những điều
+              tốt đẹp nhất.
+            </p>
+            <p>Chúc mẹ có một ngày 20/10 thật vui vẻ và hạnh phúc ❤️</p>
+          </div>
+          <p class="letter-signature">Từ con trai của mẹ ❤️</p>
+          <section class="letter-album" aria-labelledby="albumTitle">
+            <p class="eyebrow">NHỮNG ĐIỀU BÌNH DỊ MÀ QUÝ GIÁ</p>
+            <h3 id="albumTitle">NHỮNG KHOẢNH KHẮC CON MUỐN GIỮ MÃI</h3>
+            <p class="album-intro">
+              Những bức ảnh thân thương của mẹ và gia đình mình.
+            </p>
+            <div class="album-grid" id="albumGrid"></div>
+          </section>
+          <div class="screen-actions letter-actions">
+            <button
+              class="button button--primary"
+              data-next="endingScreen"
+              type="button"
+            >
+              Gửi mẹ lời nhắn cuối 💗
+            </button>
+            <button
+              class="button button--quiet"
+              data-previous="bouquetScreen"
+              type="button"
+            >
+              Quay lại ngắm hoa
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="screen screen--ending"
+        id="endingScreen"
+        aria-labelledby="endingTitle"
+        hidden
+        inert
+      >
+        <div class="ending-card">
+          <div class="ending-hearts" aria-hidden="true">♡　♥　♡</div>
+          <p class="eyebrow">GỬI MẸ, VỚI TẤT CẢ YÊU THƯƠNG</p>
+          <h2 id="endingTitle" tabindex="-1">
+            Cảm ơn mẹ vì đã luôn ở bên con.
+          </h2>
+          <p>
+            Con không mong gì hơn ngoài việc mẹ luôn khỏe mạnh, bình an và hạnh
+            phúc. Sau này dù con có lớn đến đâu, mẹ vẫn luôn là người phụ nữ
+            quan trọng nhất trong cuộc đời con.
+          </p>
+          <p class="ending-signature">Từ con trai của mẹ ❤️</p>
+          <button
+            class="button button--primary"
+            data-previous="bouquetScreen"
+            type="button"
+          >
+            🌷 Quay lại ngắm hoa
+          </button>
+          <button
+            class="button button--quiet"
+            data-previous="letterScreen"
+            type="button"
+          >
+            Quay lại lời chúc và ảnh
+          </button>
+        </div>
+        <div class="ending-petals" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <dialog class="photo-viewer" id="photoViewer" aria-label="Xem ảnh lớn">
+      <button
+        class="photo-viewer__close"
+        id="closePhotoViewer"
+        type="button"
+        aria-label="Đóng ảnh"
+      >
+        ×
+      </button>
+      <img class="photo-viewer__image" id="photoViewerImage" alt="" />
+      <p class="photo-viewer__caption" id="photoViewerCaption"></p>
+    </dialog>
+  </body>
+</html>
